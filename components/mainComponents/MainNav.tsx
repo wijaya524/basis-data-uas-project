@@ -1,10 +1,13 @@
 import React from 'react'
-import { NavbarComponents } from '../ui/navbar'
+import { NavbarComponents1 } from '../ui/Navbar/navbar1'
+import NavbarComponents2 from '../ui/Navbar/navbar2'
+
 
 const MainNav = () => {
   return (
     <>
-      <NavbarComponents/>
+      <NavbarComponents1/>
+       <NavbarComponents2/>
     </>
   )
 }
