@@ -46,7 +46,7 @@ const components: { title: string; href: string; }[] = [
 export function NavbarComponents1() {
   return (
     <>
-    <nav className="w-full flex justify-between items-center bg-gray-300 px-16">
+    <nav className="w-full flex justify-between items-center bg-gray-200 px-16">
       <h1>top-nav</h1>
     <NavigationMenu  >
     <NavigationMenuList>
