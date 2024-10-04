@@ -82,7 +82,7 @@ export function NavbarComponents1() {
 
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger> <Link href="/"><h1 className="font-bold text-sm  border-r-2 border-black px-2">Sign In</h1></Link></NavigationMenuTrigger>
+          <NavigationMenuTrigger> <Link href="/signup"><h1 className="font-bold text-sm  border-r-2 border-black px-2">Sign In</h1></Link></NavigationMenuTrigger>
         </NavigationMenuItem>
       </NavigationMenuList>
 

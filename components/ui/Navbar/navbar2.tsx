@@ -8,11 +8,11 @@ const NavbarComponents2 = () => {
 
   const components: { title: string; href: string; }[] = [
     {
-      title: "Shoes",
+      title: "Man",
       href: "/docs/primitives/alert-dialog"
     },
     {
-      title: "Clothing",
+      title: "Woman",
       href: "/docs/primitives/hover-card"
     }
   ]
@@ -21,19 +21,17 @@ const NavbarComponents2 = () => {
     <>
       <nav className=' flex justify-between items-center px-16 py-5'>
          <div className=' flex items-center justify-center'>
-            <h1>Main Nav</h1>
+            <h1 className="font-bold text-2xl">Main Nav</h1>
          </div>
-         <div >
+         <div className='flex items-center justify-center'>
 
        <NavigationMenu>
-
-    
          <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger><h1 className="font-bold text-sm  border-r-2 border-black px-2">Help</h1></NavigationMenuTrigger>
+          <NavigationMenuTrigger><h1 className="font-bold text-sm  px-2">Shoes</h1></NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="">
-              <h1 className="font-bold text-lg  pb-2 px-3">Help</h1>
+           
               {components.map((component) => (
                 <ListItem
                   key={component.title}
