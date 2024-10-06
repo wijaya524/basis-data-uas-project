@@ -3,8 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { FcGoogle } from "react-icons/fc";
-import { VscGithub } from "react-icons/vsc";
+
 
 import { Button } from "@/components/ui/button";
 import {
@@ -16,6 +15,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import Link from "next/link";
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -43,7 +43,7 @@ const SignUpComponents = () => {
     <div className=" w-full flex items-center min-h-screen justify-center ">
       <Form {...form}> 
         <form onSubmit={form.handleSubmit(console.log)} className=" space-y-2   w-96 border rounded-xl p-5">
-          <h1 className=" text-center text-xl">Sign Up</h1>
+          <h1 className=" text-center text-xl py-3 font-bold">Sign Up</h1>
           <FormField
             control={form.control}
             name="username"
@@ -90,8 +90,7 @@ const SignUpComponents = () => {
             <Button className="w-full rounded-xl mt-3" type="submit">Submit</Button>
           </div>
           <div className=" flex items-center justify-center gap-2">
-           <FcGoogle className=" text-2xl"/>
-           <VscGithub className=" text-2xl" />
+            <p>Already have an account? <Link href="/login" className=" text-blue-500">Login</Link></p>
           </div>
         </form>
       </Form>
